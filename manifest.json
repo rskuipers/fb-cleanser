@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+  "name": "Facebook Cleanser",
+  "description": "This extensions hides crap from Facebook",
+  "version": "1.0",
+  "author": "rskuipers",
+  "icons": {
+    "16": "icon-enabled.png",
+    "128": "icon.png"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "page_action": {
+    "default_icon": "icon-disabled.png",
+    "default_title": "Cleanse"
+  },
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.facebook.com/*"
+      ],
+      "js": [
+        "script.js"
+      ],
+      "css": [
+        "styles.css"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}

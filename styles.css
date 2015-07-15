@@ -1,0 +1,20 @@
+.fb-cleanser-collapsed > div {
+    height: 10px;
+    overflow: hidden;
+}
+
+.fb-cleanser-expanded > div {
+    height: auto;
+    overflow: visible;
+}
+
+.fb-cleanser-collapsed.fb-cleanser-share img,
+.fb-cleanser-collapsed.fb-cleanser-share abbr,
+.fb-cleanser-collapsed.fb-cleanser-share i
+{
+    display: none !important;
+}
+
+.fb-cleanser-collapsed.fb-cleanser-share > div {
+    height: 20px;
+}
