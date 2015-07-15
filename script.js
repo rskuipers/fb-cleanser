@@ -49,6 +49,7 @@ var disable = function() {
 };
 
 var storyToggle = function() {
+    var story = getStory(this);
     if (story.classList.contains('fb-cleanser-expanded')) {
         story.classList.remove('fb-cleanser-expanded');
         story.classList.add('fb-cleanser-collapsed');
