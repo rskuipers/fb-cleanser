@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Facebook Cleanser",
   "description": "This extensions hides crap from Facebook",
-  "version": "1.0",
+  "version": "1.0.1",
   "author": "rskuipers",
   "icons": {
     "16": "icon-enabled.png",
